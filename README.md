@@ -1,75 +1,36 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+# Web Push Notification App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+The Web Push Notification App is a web application built using React that allows users to send and receive push notifications. It leverages Firebase Cloud Messaging (FCM) for push notification functionality, making it easy to integrate and deliver real-time updates to users' devices.
 
-In the project directory, you can run:
+## Installation
 
-### `npm start`
+Follow these steps to set up and run the Web Push Notification App locally:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+~~~bash
+git clone https://github.com/your-username/web-push-notification-app.git
+cd Web-Push-Notification
+npm install
+npm start
+~~~
+It will ask permission to send you notification, allow to recieve it.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Authentication
 
-### `npm test`
+1)Go to firebase.google.com and login.
+2)Create a new project, go into the web code and copy the firebaseConfig.
+3)Go to firebase.js file in the src folder using vs code or any other editor.
+4)There is aleady a const firebaseConfig defined, delete it and paste over there your recently copied firebaseConfig.
+5)Now go to web page where your react app is running, go to inspect and then console.
+6)In it token would be generated copy that token.
+7)Now go to the project that you created in firebase.google.com and then go to engage, it's in the left side.
+8)There select messaging, and create you first campaign then firebase notification messages.
+9)Now compose the notification the way you require.
+10)Send test message here put the token that you received from the web console select it and test.
+11)You should see a notification on your window.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## If you are not able to see the notification even after following these steps check the settings of your browser and make it to receive notification.
 
-### `npm run build`
+##👍
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-# Web-Push-Notification
-Push notification sent using firebase cloud messaging
->>>>>>> 78fbb72aaacb9a8c1ffa47094154ffe3c4682057
